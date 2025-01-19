@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from '../../assets/logo-nav.webp';
 
 const Navbar = () => {
@@ -7,6 +8,12 @@ const Navbar = () => {
             <div className="logo">
                 <img src={logo} alt="logo" />
             </div>
+            <ul>
+                <li><Link to="/">Link</Link></li>
+                <li><Link to="/">Link</Link></li>
+                <li><Link to="/">Link</Link></li>
+                <li><Link to="/">Link</Link></li>
+            </ul>
         </nav>
     </header>
   )
