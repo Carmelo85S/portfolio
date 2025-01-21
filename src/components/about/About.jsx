@@ -1,3 +1,14 @@
+import html from '../../assets/icons/html.svg';
+import css from '../../assets/icons/css.svg';
+import js from '../../assets/icons/js.svg';
+import react from '../../assets/icons/react.svg';
+import sass from '../../assets/icons/sass.svg';
+import vsCode from '../../assets/icons/vs-code.svg';
+import nodejs from '../../assets/icons/nodejs.svg';
+import typescript from '../../assets/icons/typescript.svg';
+import git from '../../assets/icons/git.svg';
+import figma from '../../assets/icons/figma.svg';
+import express from '../../assets/icons/express.svg';
 import '../../style/about/about.css';
 
 const About = () => {
@@ -25,6 +36,19 @@ const About = () => {
                     Using a combination of cutting-edge technologies and reliable open-source software I build user-focused, 
                     performant websites for smartphones, tablets, and desktops.
                 </p>
+                <div className="icon-container">
+                    <img className="icon" src={html} alt="html icon" />
+                    <img className="icon" src={css} alt="css icon" />
+                    <img className="icon" src={js} alt="javascript icon" />
+                    <img className="icon" src={react} alt="react icon"/>
+                    <img className="icon" src={typescript} alt="typescript icon" />
+                    <img className="icon" src={sass} alt="Sass icon" />
+                    <img className="icon" src={nodejs} alt="node js icon" />
+                    <img className="icon" src={express} alt="express js icon" />
+                    <img className="icon" src={vsCode} alt="vs code editor icon" />
+                    <img className="icon" src={git} alt="git icon" />
+                    <img className="icon" src={figma} alt="figma icon" />
+                </div>
             </div>
         </div>
     </section>

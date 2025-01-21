@@ -9,8 +9,6 @@
     .about-container{
         @include container(1200px, 50vh);
         margin: auto;
-        display: flex;
-        border: 1px solid black;
 
         .about-content{
             @include flexbox(space-between, flex-start, column);
@@ -26,10 +24,21 @@
             }
 
             .info{
+                @include container(1200px, auto);
                 @include info;
                 color: variable.$color-text-paragraph;
                 text-align: justify;
                 margin-bottom: 30px;
+            }
+
+            .icon-container{
+                @include container(1200px, auto);
+                @include flexbox(space-between, center);
+                margin: 30px auto;
+
+                .icon{
+                    width: 80px;
+                }
             }
         }
     }

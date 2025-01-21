@@ -1,6 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Carmelo from '../../assets/img-carmelo.png';
+import Typewriter from 'typewriter-effect';
+
 import '../../style/hero/hero.css';
 
 const Hero = () => {
@@ -12,12 +14,22 @@ const Hero = () => {
             Hi, I am <span className="hero-name">Carmelo</span>
           </h1>
           <p className="hero-info">
-            I am a Front End developer currently expanding my knowledge in Back End. 
-            I am a creative person, and I enjoy building beautiful websites and applications.
+            I am a curious person from italy, with a big background working with people i can bring a fresh air of experience.
+            I am always ready to learn or try new things and i don't like to give up.
+            I am a creative person, and I enjoy building beautiful websites and applications with:
           </p>
+          <div className="typewriter-container">
+            <Typewriter
+              options={{
+                strings: ['HTML5', 'CSS3', 'Javascript', 'or', 'React and Sass'],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </div>
           <div className="hero-icons">
             <a
-              href="https://github.com/tuo-username"
+              href="https://github.com/carmelo85s"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub Profile"
@@ -25,7 +37,7 @@ const Hero = () => {
               <FontAwesomeIcon className="hero-icon" icon={faGithub} size="3x" />
             </a>
             <a
-              href="https://linkedin.com/in/tuo-username"
+              href="https://www.linkedin.com/in/carmelo-salis-7726ba298/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn Profile"

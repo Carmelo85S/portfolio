@@ -3,8 +3,10 @@
 @import '../sass/mixin';
 
 .hero-wrapper {
+    padding-top:80px;
   @include wrapper($min-height: 100vh);
   @include flexbox(space-between, center);
+  background: linear-gradient(to right, white, rgb(116, 253, 255));
 
     .hero-container {
         @include container(1200px, 50vh);
@@ -12,7 +14,7 @@
         margin: auto;
 
         .hero-content {
-        @include container(600px, 300px);
+        @include container(700px, 200px);
         @include flexbox(space-between, flex-start, column);
 
             .hero-heading {
@@ -24,8 +26,14 @@
                 }
             }
 
+            .typewriter-container{
+                @include heading;
+                color: variable.$color-primary;
+            }
+
             .hero-info {
                 @include info;
+                @include container(600px, auto);
                 margin-top: 1rem;
                 text-align: justify;
             }

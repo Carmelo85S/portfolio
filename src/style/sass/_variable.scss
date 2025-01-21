@@ -1,5 +1,5 @@
-$color-primary: #5e5efd; 
-$color-text-paragraph: #1e1d1d;
+$color-primary: rgb(0, 0, 255);
+$color-text-paragraph: rgb(123, 123, 123);
 $color-hover: #23a345; 
 $color-active: #FF5722;
 $color-neutral-dark: #212121; // Grigio scuro per testo
@@ -7,11 +7,11 @@ $color-text-button: #FFF;
 // Background colors
 $background-card: #FFFFFF; // Sfondo per le card o sezioni in evidenza
 $background-footer: $color-neutral-dark; // Sfondo del footer o sezioni scure
-$background-hover: rgb(94, 94, 253);
+$background-hover: rgb(0, 0, 255);
 
 // Text colors
 $text-primary: $color-neutral-dark; // Testo principale
-$text-secondary:rgb(94, 94, 253); // Testo secondario
+$text-secondary:rgb(0, 0, 255); // Testo secondario
 $text-inverse: #FFFFFF; // Testo su sfondi scuri (es. footer)
 
 // Heading colors
