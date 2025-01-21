@@ -1,0 +1,36 @@
+@use '../sass/font';
+@use '../sass/variable';
+@import '../sass/mixin';
+
+.about-wrapper{
+    @include wrapper;
+    margin-top: 50px;
+
+    .about-container{
+        @include container(1200px, 50vh);
+        margin: auto;
+        display: flex;
+        border: 1px solid black;
+
+        .about-content{
+            @include flexbox(space-between, flex-start, column);
+            margin: 30px auto;
+
+            .heading{
+                @include heading;
+                margin-bottom: 30px;
+
+                span{
+                    color: variable.$color-primary;
+                }
+            }
+
+            .info{
+                @include info;
+                color: variable.$color-text-paragraph;
+                text-align: justify;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

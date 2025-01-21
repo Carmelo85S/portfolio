@@ -1,0 +1,71 @@
+@use '../sass/font';
+@use '../sass/variable';
+@import '../sass/mixin';
+
+.hero-wrapper {
+  @include wrapper($min-height: 100vh);
+  @include flexbox(space-between, center);
+
+    .hero-container {
+        @include container(1200px, 50vh);
+        @include flexbox(space-between, center);
+        margin: auto;
+
+        .hero-content {
+        @include container(600px, 300px);
+        @include flexbox(space-between, flex-start, column);
+
+            .hero-heading {
+                @include heading;
+
+                .hero-name {
+                @include heading;
+                color: variable.$text-secondary;
+                }
+            }
+
+            .hero-info {
+                @include info;
+                margin-top: 1rem;
+                text-align: justify;
+            }
+
+            .hero-icons {
+                @include container(150px, 50px);
+                @include flexbox(space-around, flex-start);
+                margin: 30px 0;
+
+                .hero-icon {
+                    color: variable.$color-primary;
+                    transition: color 0.3s ease;
+
+                    &:hover {
+                        transform: scale(1.15);
+                        color: variable.$color-hover;
+                    }
+                }
+            }
+            
+            .hero-cta-container {
+                @include flexbox(space-between, center, row);
+                @include container(450px, auto);
+                text-align: center;
+
+                .hero-cta {
+                    @include cta;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .hero-image {
+        @include container(400px, 600px);
+        @include flexbox(center, center);
+        img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        }
+    }
+}
