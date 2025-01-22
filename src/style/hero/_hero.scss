@@ -4,9 +4,9 @@
 
 .hero-wrapper {
     padding-top:80px;
-  @include wrapper($min-height: 100vh);
-  @include flexbox(space-between, center);
-  background: linear-gradient(to right, white, rgb(116, 253, 255));
+    @include wrapper($min-height: 100vh);
+    @include flexbox(space-between, center);
+    background: linear-gradient(to right, white, rgb(116, 253, 255));
 
     .hero-container {
         @include container(1200px, 50vh);

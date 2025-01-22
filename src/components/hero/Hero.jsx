@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Carmelo from '../../assets/img-carmelo.png';
@@ -46,9 +47,11 @@ const Hero = () => {
             </a>
           </div>
           <div className="hero-cta-container">
-            <button className="hero-cta" aria-label="Contact Me">
+          <button className="hero-cta" aria-label="Contact Me">
+            <Link to="contact" smooth={true} duration={500} offset={-80}>
               Contact Me
-            </button>
+            </Link>
+          </button>
             <button className="hero-cta" aria-label="Resume">
               Resume
             </button>

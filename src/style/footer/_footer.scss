@@ -1,0 +1,43 @@
+@use '../sass/font';
+@use '../sass/variable';
+@import '../sass/mixin';
+
+.footer-wrapper{
+    @include wrapper($min-height:auto);
+    background: linear-gradient(to left, white, rgb(33, 198, 200));
+
+    .content-container{
+        @include container($min-height:230px);
+        @include flexbox(center, center, column);
+        margin:auto;
+
+        .text{
+            @include flexbox(center, center, column);
+            img{
+                width: 300px;
+            }
+
+            .info{
+                @include info;
+            }
+        }
+
+        .icons-container{
+            @include container(200px, 50px);
+
+            .hero-icons{
+                @include flexbox(space-around, center, row);
+                
+                .hero-icon{
+                    color: variable.$color-primary;
+                    transition: color 0.3s ease;
+
+                    &:hover {
+                        transform: scale(1.15);
+                        color: variable.$color-hover;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import Architect from '../../assets/images/architect.webp';
 import Horizon from '../../assets/images/horizon.webp';
-import ReadyRide from '../../assets/images/ready-ride.webp';
+import RideReady from '../../assets/images/ride-ready.webp';
 import VirtualPet from '../../assets/images/virtual-pet.webp';
 import '../../style/project/project.css';
 
@@ -23,8 +23,8 @@ const Projects = () => {
             linkGitHub: 'https://github.com/Carmelo85S/horizon'
         },
         {
-            img: ReadyRide,
-            title: 'ReadyRide',
+            img: RideReady,
+            title: 'RideReady',
             info: 'A luxury rent-a-car website built from scratch using React and Sass. It features car galleries with available cars categorized by type. Each car has a dedicated page with information, video reviews, and a contact form for booking.',
             linkLive: 'https://carmelo85s.github.io/ride-ready-react/',
             linkGitHub: 'https://github.com/Carmelo85S/ride-ready-react'
@@ -39,7 +39,7 @@ const Projects = () => {
     ];
 
     return (
-        <section className="projects-wrapper">
+        <section className="projects-wrapper" id="project">
             <div className="projects-heading-container">
                     <h1 className="project-heading">Few of my projects</h1>
                 </div>
