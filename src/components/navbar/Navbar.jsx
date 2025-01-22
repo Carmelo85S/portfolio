@@ -12,7 +12,6 @@ const Navbar = () => {
             <ul className='link-container'>
                 <li><Link className="link" to="/">Home</Link></li>
                 <li><Link className="link" to="/">About</Link></li>
-                <li><Link className="link" to="/">Services</Link></li>
                 <li><Link className="link" to="/">Project</Link></li>
                 <li><Link className="link contact" to="/">Contact me</Link></li>
             </ul>

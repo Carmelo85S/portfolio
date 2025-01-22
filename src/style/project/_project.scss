@@ -1,0 +1,59 @@
+@use '../sass/font';
+@use '../sass/variable';
+@import '../sass/mixin';
+
+.projects-wrapper{
+    @include wrapper;
+
+    .projects-heading-container{
+        @include container($min-height:100px);
+        margin: auto;
+
+        .project-heading{
+            @include heading;
+            text-align: center
+        }
+    }
+
+    .projects-container{
+        @include container(1300px, auto); 
+        margin: auto;
+        @include flexbox(center, center);
+
+        .project-card{
+            @include container(1000px, auto);
+            margin: 30px;
+            @include flexbox(space-between, center, row, wrap);
+
+            .project-image{
+                max-width: 600px;
+            }
+
+            .info-container{
+                @include container(450px, auto);
+                
+                .project-title{
+                    @include heading;
+                    font-size: 30px;
+                }
+
+                .project-info{
+                    @include info;
+                    font-size: 14px;
+                }
+
+                .cta-container{
+                    @include container(450px, 100px);
+                    @include flexbox(space-between, center);
+                
+                    .cta{
+                        @include cta;
+                        width: 180px;
+                        height: 45px;
+                    }
+                }
+            }
+        }
+    }
+
+}

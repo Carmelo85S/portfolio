@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
-import Architect from '../../assets/images/architect.jpg';
-import Horizon from '../../assets/images/horizon.jpg';
-import RideReady from '../../assets/images/ride-ready.jpg';
-import VirtualPet from '../../assets/images/virtual-pet.jpg';
+import Architect from '../../assets/images/architect.webp';
+import Horizon from '../../assets/images/horizon.webp';
+import ReadyRide from '../../assets/images/ready-ride.webp';
+import VirtualPet from '../../assets/images/virtual-pet.webp';
+import '../../style/project/project.css';
 
 const Projects = () => {
 
@@ -22,7 +23,7 @@ const Projects = () => {
             linkGitHub: 'https://github.com/Carmelo85S/horizon'
         },
         {
-            img: RideReady,
+            img: ReadyRide,
             title: 'ReadyRide',
             info: 'A luxury rent-a-car website built from scratch using React and Sass. It features car galleries with available cars categorized by type. Each car has a dedicated page with information, video reviews, and a contact form for booking.',
             linkLive: 'https://carmelo85s.github.io/ride-ready-react/',
@@ -39,25 +40,31 @@ const Projects = () => {
 
     return (
         <section className="projects-wrapper">
-            <section className="projects-container">
-                <div className="projects-heading-container">
+            <div className="projects-heading-container">
                     <h1 className="project-heading">Few of my projects</h1>
                 </div>
-                {projectData.map((project) =>
-                    <div key={project.title} className="project-card">
-                        <img src={project.img} alt={project.title} className="project-image" />
-                        <section className="info-container">
-                            <h3 className="project-title">{project.title}</h3>
-                            <p className="project-info">{project.info}</p>
-                            <Link to={project.linkLive}>
+            <section className="projects-container">
+            {projectData.map((project) => (
+                <article key={project.title} className="project-card">
+                    <img
+                        src={project.img}
+                        alt={project.title}
+                        className="project-image"
+                    />
+                    <section className="info-container">
+                        <h3 className="project-title">{project.title}</h3>
+                        <p className="project-info">{project.info}</p>
+                        <section className="cta-container">
+                            <a href={project.linkLive} target="_blank" rel="noopener noreferrer">
                                 <button className="cta" aria-label={`View ${project.title} live`}>Live</button>
-                            </Link>
-                            <Link to={project.linkGitHub}>
+                            </a>
+                            <a href={project.linkGitHub} target="_blank" rel="noopener noreferrer">
                                 <button className="cta" aria-label={`View ${project.title} on GitHub`}>GitHub</button>
-                            </Link>
+                            </a>
                         </section>
-                    </div>
-                )}
+                    </section>
+                </article>
+            ))}
             </section>
         </section>
     );

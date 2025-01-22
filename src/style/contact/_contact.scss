@@ -1,0 +1,66 @@
+@use '../sass/font';
+@use '../sass/variable';
+@import '../sass/mixin';
+
+.contact-wrapper{
+    @include wrapper($min-height:500px);
+
+
+    .contact-container{
+        @include container(1100px, 500px);
+        @include flexbox(space-between);
+        margin: auto;
+
+        .contact-container-text{
+            @include container(500px, auto);
+            .contact-heading{
+                @include heading;
+                margin-bottom: 30px;
+            }
+
+            .info{
+                @include info;
+            }
+        }
+
+        .form-container{
+            @include container(500px, 420px);
+            display: flex;
+
+            form{
+                @include flexbox(space-between, flex-start, column);
+
+                label{
+                    @include info;
+                    font-size: 16px;
+                }
+
+                input{
+                    @include info;
+                    padding-left: 10px;
+                    width: 500px;
+                    font-size: 14px;
+                    border:none;
+                    border-bottom: 1px solid variable.$color-primary;
+                }
+
+                textarea{
+                    @include info;
+                    padding-left: 10px;
+                    font-size: 14px;
+                    width: 500px;
+                    height: 100px;
+                    resize: none;
+                    border: 1px solid variable.$color-primary;
+                    
+                }
+
+                .submit{
+                    @include cta;
+                    margin-top: 20px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
