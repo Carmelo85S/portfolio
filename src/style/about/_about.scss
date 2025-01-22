@@ -29,6 +29,10 @@
                 color: variable.$color-text-paragraph;
                 text-align: justify;
                 margin-bottom: 30px;
+
+                span{
+                    color: variable.$color-primary;
+                }
             }
 
             .icon-container{
