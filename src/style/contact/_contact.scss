@@ -9,22 +9,26 @@
         @include container(1100px, 500px);
         @include flexbox(space-between, center, row, wrap);
         margin: auto;
+        
 
         .contact-container-text{
             @include container(500px, auto);
             .contact-heading{
                 @include heading;
                 margin-bottom: 30px;
+                padding-left: 20px;
             }
 
             .info{
                 @include info;
+                padding-left: 20px;
             }
         }
 
         .form-container{
             @include container(500px, 420px);
             display: flex;
+            padding-right: 20px;
 
             form{
                 @include flexbox(space-between, flex-start, column);
@@ -37,7 +41,7 @@
                 input{
                     @include info;
                     padding-left: 10px;
-                    width: 500px;
+                    width: 480px;
                     font-size: 14px;
                     border:none;
                     border-bottom: 1px solid variable.$color-primary;
@@ -47,7 +51,7 @@
                     @include info;
                     padding-left: 10px;
                     font-size: 14px;
-                    width: 500px;
+                    width: 480px;
                     height: 100px;
                     resize: none;
                     border: 1px solid variable.$color-primary;
