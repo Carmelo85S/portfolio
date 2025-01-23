@@ -5,10 +5,9 @@
 .contact-wrapper{
     @include wrapper($min-height:500px);
 
-
     .contact-container{
         @include container(1100px, 500px);
-        @include flexbox(space-between);
+        @include flexbox(space-between, center, row, wrap);
         margin: auto;
 
         .contact-container-text{
@@ -59,6 +58,165 @@
                     @include cta;
                     margin-top: 20px;
                     width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:500px){
+    .contact-wrapper{
+        .contact-container{
+            @include container(500px, 100px);
+            margin: auto;
+    
+            .contact-container-text{
+                @include container(500px, auto);
+                @include flexbox(center, center, column);
+                
+                .contact-heading{
+                    @include heading;
+                    margin-bottom: 30px;
+                    text-align: right;
+                    padding: 0 20px;
+                    padding-left: 80px;
+                    font-size:30px;
+                }
+    
+                .info{
+                    @include info;
+                    padding: 0 20px;
+                    padding-left: 80px;
+                    text-align: justify;
+                    margin-bottom: 30px;
+                }
+            }
+    
+            .form-container{
+                @include container(480px, 420px);
+                display: flex;
+                padding: 0 20px;
+                padding-left: 80px;
+    
+                form{
+                    @include flexbox(space-between, flex-start, column);
+                    @include container(480px, 420px);
+                    label{
+                        @include info;
+                        font-size: 16px;
+                    }
+    
+                    input{
+                        @include info;
+                        padding-left: 10px;
+                        padding-right: 20px;
+                        max-width: 480px;
+                        min-height: auto;
+                        width: 100%;
+                        font-size: 14px;
+                        border:none;
+                        border-bottom: 1px solid variable.$color-primary;
+                    }
+    
+                    textarea{
+                        @include info;
+                        padding-left: 10px;
+                        font-size: 14px;
+                        max-width: 480px;
+                        min-height: auto;
+                        width: 100%;
+                        resize: none;
+                        border: 1px solid variable.$color-primary;
+                        
+                    }
+    
+                    .submit{
+                        @include cta;
+                        margin-top: 20px;
+                        max-width: 380px;
+                        min-height: auto;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:999px){
+    .contact-wrapper{
+        .contact-container{
+            @include container(800px, 100px);
+            margin: auto;
+    
+            .contact-container-text{
+                @include container(800px, auto);
+                @include flexbox(center, center);
+                
+                .contact-heading{
+                    @include heading;
+                    margin-bottom: 30px;
+                    text-align: center;
+                    padding: 0 20px;
+                    padding-left: 80px;
+                }
+    
+                .info{
+                    @include info;
+                    padding: 0 20px;
+                    padding-left: 80px;
+                    text-align: justify;
+                    margin-bottom: 30px;
+                }
+            }
+    
+            .form-container{
+                @include container(800px, 420px);
+                display: flex;
+                padding: 0 20px;
+                padding-left: 80px;
+    
+                form{
+                    @include flexbox(space-between, center, column);
+                    @include container(800px, 420px);
+                    gap:20px;
+
+                    label{
+                        @include info;
+                        font-size: 16px;
+                    }
+    
+                    input{
+                        @include info;
+                        padding-left: 10px;
+                        padding-right: 20px;
+                        max-width: 800px;
+                        min-height: auto;
+                        width: 100%;
+                        font-size: 14px;
+                        border:none;
+                        border-bottom: 1px solid variable.$color-primary;
+                    }
+    
+                    textarea{
+                        @include info;
+                        padding-left: 10px;
+                        font-size: 14px;
+                        max-width: 500px;
+                        min-height: auto;
+                        width: 100%;
+                        resize: none;
+                        border: 1px solid variable.$color-primary;
+                        
+                    }
+    
+                    .submit{
+                        @include cta;
+                        margin-top: 20px;
+                        max-width: 500px;
+                        min-height: auto;
+                        width: 100%;
+                    }
                 }
             }
         }

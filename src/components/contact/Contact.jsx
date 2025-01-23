@@ -13,7 +13,6 @@ const Contact = () => {
                     Whether you have a question, a project idea, or just want to connect, 
                     I’d love to hear from you! I look forward to starting a conversation and exploring how we can work together.
                 </p>
-
             </section>
             <section className="form-container">
                 <form action="">
