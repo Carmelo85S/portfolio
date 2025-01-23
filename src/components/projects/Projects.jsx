@@ -40,7 +40,7 @@ const Projects = () => {
     return (
         <section className="projects-wrapper" id="project">
             <div className="projects-heading-container">
-                    <h1 className="project-heading">Few of my projects</h1>
+                    <h1 className="project-heading">My projects</h1>
                 </div>
             <section className="projects-container">
             {projectData.map((project) => (
