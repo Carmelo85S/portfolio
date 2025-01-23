@@ -9,7 +9,7 @@
     background: linear-gradient(to right, white, rgb(116, 253, 255));
 
     .hero-container {
-        @include container(1200px, 50vh);
+        @include container(1200px, auto);
         @include flexbox(space-between, center);
         margin: auto;
 
@@ -68,8 +68,9 @@
     }
 
     .hero-image {
-        @include container(400px, 600px);
+        @include container(500px, auto);
         @include flexbox(center, center);
+
         img {
         width: 100%;
         max-width: 500px;

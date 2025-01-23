@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import Architect from '../../assets/images/architect.webp';
 import Horizon from '../../assets/images/horizon.webp';
 import RideReady from '../../assets/images/ride-ready.webp';
