@@ -17,7 +17,7 @@ const About = () => {
         <div className="about-container">
             <div className="about-content">
                 <h2 className="heading">
-                    A little about <span>me</span>
+                    About <span>me</span>
                 </h2>
                 <p className="info">
                 I am always been a creative person, in this moment of life i like to create beautifull webpage from scratch or Figma Design.
@@ -30,7 +30,7 @@ const About = () => {
 
                 </p>
                 <h2 className="heading">
-                    Tech and tools
+                    Tech
                 </h2>
                 <p className="info">
                     Using a combination of cutting-edge technologies and reliable open-source software I build user-focused, 
