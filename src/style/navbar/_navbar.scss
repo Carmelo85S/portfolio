@@ -38,3 +38,33 @@
         }
     }
 }
+
+@media screen and (max-width:900px){
+    .header{
+        max-width: 50px;
+        min-height: 100vh;
+        .nav{
+            @include container(50, 80px);
+            @include flexbox(space-between, flex-start, column);
+            margin: auto;
+            z-index: 100;
+         
+            .logo{
+                display:none;
+                img{
+                    width: 200px;
+                }
+            }
+    
+            .link-container{
+                @include container(60px, auto);
+                @include flexbox(flex-start, center);
+                writing-mode: vertical-lr;
+                
+                .contact{
+                    border: none
+                }
+            }
+        }
+    } 
+}

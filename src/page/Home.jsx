@@ -12,7 +12,7 @@ const Home = () => {
       <div id="hero">
         <Hero />
       </div>
-      <div id="about">
+      {/*<div id="about">
         <About />
       </div>
       <div id="project">
@@ -21,7 +21,7 @@ const Home = () => {
       <div id="contact">
         <Contact />
       </div>
-      <Footer />
+      <Footer />*/}
     </div>
   );
 };
