@@ -39,15 +39,15 @@
     }
 }
 
-@media screen and (max-width:900px){
+@media screen and(max-width:900px){
     .header{
         max-width: 50px;
         min-height: 100vh;
+        z-index:0;
         .nav{
             @include container(50, 80px);
             @include flexbox(space-between, flex-start, column);
             margin: auto;
-            z-index: 100;
          
             .logo{
                 display:none;

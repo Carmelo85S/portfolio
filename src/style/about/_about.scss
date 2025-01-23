@@ -7,12 +7,13 @@
     margin-top: 50px;
 
     .about-container{
-        @include container(1200px, 50vh);
+        @include container;
         margin: auto;
+        display: flex;
 
         .about-content{
-            @include flexbox(space-between, flex-start, column);
-            margin: 30px auto;
+            @include flexbox(space-between, center, column);
+            padding: auto;
 
             .heading{
                 @include heading;
@@ -24,7 +25,8 @@
             }
 
             .info{
-                @include container(1200px, auto);
+                @include container;
+                min-height: auto;
                 @include info;
                 color: variable.$color-text-paragraph;
                 text-align: justify;

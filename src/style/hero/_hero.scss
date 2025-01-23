@@ -3,19 +3,18 @@
 @import '../sass/mixin';
 
 .hero-wrapper {
-    padding-top:80px;
-    @include wrapper($min-height: 100vh);
-    @include flexbox(space-between, center);
+    @include wrapper($min-height:50vh);
     background: linear-gradient(to right, white, rgb(116, 253, 255));
 
     .hero-container {
-        @include container(1200px, auto);
-        @include flexbox(space-between, center);
+        padding-top: 80px;
+        @include container;
+        @include flexbox(space-around, center);
         margin: auto;
 
         .hero-content {
-        @include container(700px, 200px);
-        @include flexbox(space-between, flex-start, column);
+        @include container(600px, 200px);
+        @include flexbox(space-around, flex-start, column);
 
             .hero-heading {
                 @include heading;
@@ -56,7 +55,7 @@
             
             .hero-cta-container {
                 @include flexbox(space-between, center, row);
-                @include container(450px, auto);
+                @include container(450px, 100px);
                 text-align: center;
 
                 .hero-cta {
@@ -78,3 +77,131 @@
         }
     }
 }
+
+@media screen and (min-width:320px) and (max-width:500px){
+
+.hero-wrapper {
+    padding-left: 60px;
+    .hero-container {
+
+        .hero-content {
+        @include container(500px, 200px);
+        @include flexbox(center, center, column);
+
+            .hero-heading {
+                @include heading;
+                font-size:40px;
+                text-align: center;
+                @include container(300px, 100px);
+
+                .hero-name {
+                @include heading;
+                font-size:40px;
+                color: variable.$text-secondary;
+                }
+            }
+
+            .typewriter-container{
+                @include heading;
+                font-size:30px;
+                text-align: center;
+                color: variable.$color-primary;
+            }
+
+            .hero-info {
+                @include info;
+                @include container(500px, auto);
+                padding: 0 20px;
+                text-align: justify;
+            }
+
+            
+            
+            .hero-cta-container {
+                @include flexbox(space-between, center, column);
+                @include container(500px, 120px);
+                padding: 0 20px;
+                text-align: center;
+
+                .hero-cta {
+                    @include cta;
+                    width: 100%;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .hero-image {
+        margin-top:30px;
+        @include container(300px, auto);
+        @include flexbox(center, center);
+
+        img {
+        width: 100%;
+        height: auto;
+        }
+    }
+}
+
+}
+
+@media screen and (min-width:501px) and (max-width:1099px){
+
+    .hero-wrapper {
+        padding-left: 60px;
+        .hero-container {
+    
+            .hero-content {
+            @include container(1000px, 200px);
+            @include flexbox(center, center, column);
+    
+                .hero-heading {
+                    @include heading;
+                    text-align: center;
+                    @include container(1000px, 100px);
+    
+                    .hero-name {
+                    @include heading;
+                    color: variable.$text-secondary;
+                    }
+                }
+    
+                .typewriter-container{
+                    @include heading;
+                    text-align: center;
+                    color: variable.$color-primary;
+                }
+    
+                .hero-info {
+                    @include info;
+                    @include container(900px, auto);
+                }
+                
+                .hero-cta-container {
+                    @include flexbox(space-between, center, column);
+                    @include container(900px, 120px);
+                    padding: 0 20px;
+                    text-align: center;
+    
+                    .hero-cta {
+                        @include cta;
+                        width: 350px;
+                    }
+                }
+            }
+        }
+    
+        .hero-image {
+            margin-top:30px;
+            @include container(500px, auto);
+            @include flexbox(center, center);
+    
+            img {
+            width: 100%;
+            height: auto;
+            }
+        }
+    }
+    
+    }
