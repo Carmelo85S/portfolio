@@ -15,9 +15,11 @@ const Hero = () => {
             Hi, I am <span className="hero-name">Carmelo</span>
           </h1>
           <p className="hero-info">
-            I am a curious person from italy, with a big background working with people i can bring a fresh air of experience.
-            I am always ready to learn or try new things and i don't like to give up.
-            I am a creative person, and I enjoy building beautiful websites and applications with:
+            I’m a curious person from Italy with a rich background in working with people. 
+            I bring a fresh perspective and a wealth of experience to everything I do. 
+            Always open to learn and try new things, I never run away from challenges. 
+            As a creative person, I enjoy designing beautiful websites and applications 
+            with:
           </p>
           <div className="typewriter-container">
             <Typewriter

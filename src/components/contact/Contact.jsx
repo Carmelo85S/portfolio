@@ -39,7 +39,7 @@ const Contact = () => {
                 });
             }
         } catch (error) {
-            // Handle network errors
+            // Handle network errors form
             Swal.fire({
                 title: "Error!",
                 text: "An error occurred while sending your message. Please try again later.",
@@ -62,7 +62,8 @@ const Contact = () => {
                     <p className="info">
                         Feel free to send me a message through this form. 
                         Whether you have a question, a project idea, or just want to connect, 
-                        I’d love to hear from you! I look forward to starting a conversation and exploring how we can work together.
+                        I’d love to hear from you! I look forward to starting a conversation 
+                        and exploring how we can work together.
                     </p>
                 </section>
                 <section className="form-container">
