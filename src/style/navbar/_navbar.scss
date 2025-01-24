@@ -30,6 +30,11 @@
             .link{
                 @include link;
                 cursor:pointer;
+
+                &:hover{
+                    background-color: variable.$background-hover;
+                    color: variable.$text-inverse;
+                }
             }
 
             .contact{
@@ -39,28 +44,36 @@
     }
 }
 
-@media screen and(max-width:900px){
+@media screen and (max-width:900px){
     .header{
         max-width: 50px;
         min-height: 100vh;
         z-index:0;
         .nav{
-            @include container(50, 80px);
+            @include container(50px, 80px);
             @include flexbox(space-between, flex-start, column);
             margin: auto;
          
             .logo{
                 display:none;
+
                 img{
                     width: 200px;
                 }
             }
     
             .link-container{
-                @include container(60px, auto);
+                @include container(50px, auto);
                 @include flexbox(flex-start, center);
                 writing-mode: vertical-lr;
                 
+                .link{
+                    @include link;
+                    cursor:pointer;
+                    padding:30px 10px;
+                }
+                
+
                 .contact{
                     border: none
                 }
