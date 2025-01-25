@@ -97,6 +97,7 @@
                         @include heading;
                         margin-top: 20px;
                         font-size: 30px;
+                        text-align: right;
                     }
     
                     .project-info{
@@ -136,7 +137,8 @@
             .project-heading{
                 @include heading;
                 text-align: center;
-                padding-right: 20px;
+                padding: 0 20px;
+                padding-left: 80px;
             }
         }
     

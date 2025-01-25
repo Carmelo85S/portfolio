@@ -29,7 +29,7 @@ const About = () => {
                  I like to write my website in <span>React</span> and style with <span>Sass</span>. 
                 When creating a new web application i take into consideration the user experience.
                 I combine good design, technology and innovation in all my project. 
-                Currently i am focused in learning <span>Typescrip</span> and undestand more Back end development.
+                Currently i am focused in learning <span>Typescript</span> and undestand more Back end development.
                 </p>
                 <h2 className="heading">
                     Tech

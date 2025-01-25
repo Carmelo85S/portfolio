@@ -54,9 +54,9 @@ const Hero = () => {
               Contact Me
             </Link>
           </button>
-            <button className="hero-cta" aria-label="Resume">
+            {/*<button className="hero-cta" aria-label="Resume">
               Resume
-            </button>
+            </button>*/}
           </div>
         </div>
         <div className="hero-image">
