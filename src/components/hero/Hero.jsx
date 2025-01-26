@@ -1,7 +1,7 @@
 import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import Carmelo from '../../assets/img-carmelo.png';
+import Carmelo from '../../assets/img-carmelo.webp';
 import Typewriter from 'typewriter-effect';
 
 import '../../style/hero/hero.css';
