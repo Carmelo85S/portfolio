@@ -1,9 +1,9 @@
-@use '../sass/font';
-@use '../sass/variable';
-@import '../sass/mixin';
+@use '../sass/font' as font;
+@use '../sass/variable' as variable;
+@use '../sass/mixin' as mixin;
 
 .header{
-    @include wrapper($min-height: 80px);
+    @include mixin.wrapper($min-height: 80px);
     display: flex;
     position: fixed;
     z-index: 10;
@@ -11,12 +11,12 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.205);
 
     .nav{
-        @include container(1300px, 80px);
-        @include flexbox(space-between, center, row, wrap);
+        @include mixin.container(1300px, 80px);
+        @include mixin.flexbox(space-between, center, row, wrap);
         margin: auto;
      
         .logo{
-            @include container(250px, 50px);
+            @include mixin.container(250px, 50px);
 
             img{
                 width: 200px;
@@ -24,11 +24,11 @@
         }
 
         .link-container{
-            @include container(600px, 80px);
-            @include flexbox(space-between, center, row);
+            @include mixin.container(600px, 80px);
+            @include mixin.flexbox(space-between, center, row);
             
             .link{
-                @include link;
+                @include mixin.link;
                 cursor:pointer;
 
                 &:hover{
@@ -50,8 +50,8 @@
         min-height: 100vh;
         z-index:0;
         .nav{
-            @include container(50px, 80px);
-            @include flexbox(space-between, flex-start, column);
+            @include mixin.container(50px, 80px);
+            @include mixin.flexbox(space-between, flex-start, column);
             margin: auto;
          
             .logo{
@@ -63,12 +63,12 @@
             }
     
             .link-container{
-                @include container(50px, auto);
-                @include flexbox(flex-start, center);
+                @include mixin.container(50px, auto);
+                @include mixin.flexbox(flex-start, center);
                 writing-mode: vertical-lr;
                 
                 .link{
-                    @include link;
+                    @include mixin.link;
                     cursor:pointer;
                     padding:30px 10px;
                 }

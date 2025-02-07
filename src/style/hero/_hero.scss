@@ -1,45 +1,45 @@
-@use '../sass/font';
-@use '../sass/variable';
-@import '../sass/mixin';
+@use '../sass/font' as font;
+@use '../sass/variable' as variable;
+@use '../sass/mixin' as mixin;
 
 .hero-wrapper {
-    @include wrapper($min-height:50vh);
+    @include mixin.wrapper($min-height:50vh);
     background: linear-gradient(to right, white, rgb(116, 253, 255));
 
     .hero-container {
         padding-top: 80px;
-        @include container;
-        @include flexbox(space-around, center);
+        @include mixin.container;
+        @include mixin.flexbox(space-around, center);
         margin: auto;
 
         .hero-content {
-        @include container(600px, 200px);
-        @include flexbox(space-around, flex-start, column);
+        @include mixin.container(600px, 200px);
+        @include mixin.flexbox(space-around, flex-start, column);
 
             .hero-heading {
-                @include heading;
+                @include mixin.heading;
 
                 .hero-name {
-                @include heading;
+                @include mixin.heading;
                 color: variable.$text-secondary;
                 }
             }
 
             .typewriter-container{
-                @include heading;
+                @include mixin.heading;
                 color: variable.$color-primary;
             }
 
             .hero-info {
-                @include info;
-                @include container(600px, auto);
+                @include mixin.info;
+                @include mixin.container(600px, auto);
                 margin-top: 1rem;
                 text-align: justify;
             }
 
             .hero-icons {
-                @include container(150px, 50px);
-                @include flexbox(space-around, flex-start);
+                @include mixin.container(150px, 50px);
+                @include mixin.flexbox(space-around, flex-start);
                 margin: 30px 0;
 
                 .hero-icon {
@@ -54,12 +54,12 @@
             }
             
             .hero-cta-container {
-                @include flexbox(space-between, center, row);
-                @include container(450px, 100px);
+                @include mixin.flexbox(space-between, center, row);
+                @include mixin.container(450px, 100px);
                 text-align: center;
 
                 .hero-cta {
-                    @include cta;
+                    @include mixin.cta;
                     cursor: pointer;
                 }
             }
@@ -67,8 +67,8 @@
     }
 
     .hero-image {
-        @include container(500px, auto);
-        @include flexbox(center, center);
+        @include mixin.container(500px, auto);
+        @include mixin.flexbox(center, center);
 
         img {
         width: 100%;
@@ -85,46 +85,44 @@
     .hero-container {
 
         .hero-content {
-        @include container(500px, 200px);
-        @include flexbox(center, center, column);
+        @include mixin.container(500px, 200px);
+        @include mixin.flexbox(center, center, column);
 
             .hero-heading {
-                @include heading;
+                @include mixin.heading;
                 font-size:40px;
                 text-align: center;
-                @include container(300px, 100px);
+                @include mixin.container(300px, 100px);
 
                 .hero-name {
-                @include heading;
+                @include mixin.heading;
                 font-size:40px;
                 color: variable.$text-secondary;
                 }
             }
 
             .typewriter-container{
-                @include heading;
+                @include mixin.heading;
                 font-size:30px;
                 text-align: center;
                 color: variable.$color-primary;
             }
 
             .hero-info {
-                @include info;
-                @include container(500px, auto);
+                @include mixin.info;
+                @include mixin.container(500px, auto);
                 padding: 0 20px;
                 text-align: justify;
             }
-
-            
             
             .hero-cta-container {
-                @include flexbox(space-between, center, column);
-                @include container(500px, 120px);
+                @include mixin.flexbox(space-between, center, column);
+                @include mixin.container(500px, 120px);
                 padding: 0 20px;
                 text-align: center;
 
                 .hero-cta {
-                    @include cta;
+                    @include mixin.cta;
                     width: 100%;
                     cursor: pointer;
                 }
@@ -134,8 +132,8 @@
 
     .hero-image {
         margin-top:30px;
-        @include container(300px, auto);
-        @include flexbox(center, center);
+        @include mixin.container(300px, auto);
+        @include mixin.flexbox(center, center);
 
         img {
         width: 100%;
@@ -153,39 +151,39 @@
         .hero-container {
     
             .hero-content {
-            @include container(1000px, 200px);
-            @include flexbox(center, center, column);
+            @include mixin.container(1000px, 200px);
+            @include mixin.flexbox(center, center, column);
     
                 .hero-heading {
-                    @include heading;
+                    @include mixin.heading;
                     text-align: center;
-                    @include container(1000px, 100px);
+                    @include mixin.container(1000px, 100px);
     
                     .hero-name {
-                    @include heading;
+                    @include mixin.heading;
                     color: variable.$text-secondary;
                     }
                 }
     
                 .typewriter-container{
-                    @include heading;
+                    @include mixin.heading;
                     text-align: center;
                     color: variable.$color-primary;
                 }
     
                 .hero-info {
-                    @include info;
-                    @include container(900px, auto);
+                    @include mixin.info;
+                    @include mixin.container(900px, auto);
                 }
                 
                 .hero-cta-container {
-                    @include flexbox(space-between, center, column);
-                    @include container(900px, 120px);
+                    @include mixin.flexbox(space-between, center, column);
+                    @include mixin.container(900px, 120px);
                     padding: 0 20px;
                     text-align: center;
     
                     .hero-cta {
-                        @include cta;
+                        @include mixin.cta;
                         width: 350px;
                     }
                 }
@@ -194,8 +192,8 @@
     
         .hero-image {
             margin-top:30px;
-            @include container(500px, auto);
-            @include flexbox(center, center);
+            @include mixin.container(500px, auto);
+            @include mixin.flexbox(center, center);
     
             img {
             width: 100%;
@@ -203,5 +201,4 @@
             }
         }
     }
-    
-    }
+}

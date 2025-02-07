@@ -1,53 +1,53 @@
-@use '../sass/font';
-@use '../sass/variable';
-@import '../sass/mixin';
+@use '../sass/font' as font;
+@use '../sass/variable' as variable;
+@use '../sass/mixin' as mixin;
 
 .projects-wrapper{
-    @include wrapper;
+    @include mixin.wrapper;
 
     .projects-heading-container{
-        @include container($min-height:100px);
+        @include mixin.container($min-height:100px);
         margin: auto;
 
         .project-heading{
-            @include heading;
+            @include mixin.heading;
             text-align: center;
         }
     }
 
     .projects-container{
-        @include container(1300px, auto); 
+        @include mixin.container(1300px, auto); 
         margin: auto;
-        @include flexbox(center, center);
+        @include mixin.flexbox(center, center);
 
         .project-card{
-            @include container(1000px, auto);
+            @include mixin.container(1000px, auto);
             margin: 30px;
-            @include flexbox(space-between, center, row, wrap);
+            @include mixin.flexbox(space-between, center, row, wrap);
 
             .project-image{
                 max-width: 600px;
             }
 
             .info-container{
-                @include container(450px, auto);
+                @include mixin.container(450px, auto);
                 
                 .project-title{
-                    @include heading;
+                    @include mixin.heading;
                     font-size: 30px;
                 }
 
                 .project-info{
-                    @include info;
+                    @include mixin.info;
                     font-size: 14px;
                 }
 
                 .cta-container{
-                    @include container(450px, 100px);
-                    @include flexbox(space-between, center);
+                    @include mixin.container(450px, 100px);
+                    @include mixin.flexbox(space-between, center);
                 
-                    .cta{
-                        @include cta;
+                    .ctmixin.a{
+                        @include mixin.cta;
                         width: 180px;
                         height: 45px;
                     }
@@ -59,61 +59,61 @@
 }
 
 @media screen and (min-width:320px) and (max-width:500px){
-    .projects-wrapper{
-        @include wrapper;
+    .projects-mixin.wrapper{
+        @include mixin.wrapper;
     
-        .projects-heading-container{
-            @include container($min-height:50px);
+        .projects-mixin.heading-container{
+            @include mixin.container($min-height:50px);
             margin: auto;
     
-            .project-heading{
-                @include heading;
+            .project-hmixin.eading{
+                @include mixin.heading;
                 font-size: 35px;
                 text-align: right;
                 padding-right: 20px;
             }
         }
     
-        .projects-container{
-            @include container(500px, auto); 
+        .projects-mixin.container{
+            @include mixin.container(500px, auto); 
             margin: auto;
-            @include flexbox(center, center);
+            @include mixin.flexbox(center, center);
     
             .project-card{
-                @include container(500px, auto);
+                @include mixin.container(500px, auto);
                 margin-bottom: 10px; 
                 padding-right: 20px;
                 padding-left: 60px;
-                @include flexbox(space-between, center, column);
+                @include mixin.flexbox(space-between, center, column);
     
                 .project-image{
                     max-width: 280px;
                 }
     
                 .info-container{
-                    @include container(500px, auto);
+                    @include mixin.container(500px, auto);
                     
                     .project-title{
-                        @include heading;
+                        @include mixin.heading;
                         margin-top: 20px;
                         font-size: 30px;
                         text-align: right;
                     }
     
                     .project-info{
-                        @include info;
+                        @include mixin.info;
                         font-size: 16px;
                         text-align: justify;
                     }
     
                     .cta-container{
-                        @include container(500px, 100px);
-                        @include flexbox(center, center, row, wrap);
+                        @include mixin.container(500px, 100px);
+                        @include mixin.flexbox(center, center, row, wrap);
                         gap:20px;
                         margin-top: 20px;
                     
                         .cta{
-                            @include cta;
+                            @include mixin.cta;
                             width: 120px;
                             height: 45px;
 
@@ -128,14 +128,14 @@
 
 @media screen and (min-width:501px) and (max-width:900px){
     .projects-wrapper{
-        @include wrapper;
+        @include mixin.wrapper;
     
         .projects-heading-container{
-            @include container($min-height:100px);
+            @include mixin.container($min-height:100px);
             margin: auto;
     
             .project-heading{
-                @include heading;
+                @include mixin.heading;
                 text-align: center;
                 padding: 0 20px;
                 padding-left: 80px;
@@ -143,16 +143,16 @@
         }
     
         .projects-container{
-            @include container(900px, auto); 
+            @include mixin.container(900px, auto); 
             margin: auto;
-            @include flexbox(center, center);
+            @include mixin.flexbox(center, center);
     
             .project-card{
-                @include container(900px, auto);
+                @include mixin.container(900px, auto);
                 margin: 10px; 
                 padding-right: 20px;
                 padding-left: 80px;
-                @include flexbox(space-between, center, column);
+                @include mixin.flexbox(space-between, center, column);
     
                 .project-image{
                     max-width: 500px;
@@ -161,10 +161,10 @@
                 }
     
                 .info-container{
-                    @include container(900px, auto);
+                    @include mixin.container(900px, auto);
                     
                     .project-title{
-                        @include heading;
+                        @include mixin.heading;
                         margin-top: 20px;
                         font-size: 30px;
                         text-align: center;
@@ -173,18 +173,18 @@
                     .project-info{
                         max-width: 500px;
                         margin: 10px auto;
-                        @include info;
+                        @include mixin.info;
                         font-size: 16px;
                         text-align: center;
                     }
     
                     .cta-container{
-                        @include container(650px, 100px);
+                        @include mixin.container(650px, 100px);
                         margin: auto;
-                        @include flexbox(space-around, center);
+                        @include mixin.flexbox(space-around, center);
                     
                         .cta{
-                            @include cta;
+                            @include mixin.cta;
                             width: 180px;
                             height: 45px;
                         }
@@ -198,28 +198,28 @@
 
 @media screen and (min-width:901px) and (max-width:1020px){
     .projects-wrapper{
-        @include wrapper;
+        @include mixin.wrapper;
     
         .projects-heading-container{
-            @include container($min-height:100px);
+            @include mixin.container($min-height:100px);
             margin: auto;
     
             .project-heading{
-                @include heading;
+                @include mixin.heading;
                 text-align: center;
             }
         }
     
         .projects-container{
-            @include container(1000px, auto); 
+            @include mixin.container(1000px, auto); 
             margin: auto;
-            @include flexbox(center, center);
+            @include mixin.flexbox(center, center);
     
             .project-card{
-                @include container(1000px, auto);
+                @include mixin.container(1000px, auto);
                 margin: 10px; 
                 padding: 20px;
-                @include flexbox(center, center, row, wrap);
+                @include mixin.flexbox(center, center, row, wrap);
                 
                 .project-image{
                     max-width: 500px;
@@ -227,26 +227,26 @@
                 }
     
                 .info-container{
-                    @include container(500px, auto);
+                    @include mixin.container(500px, auto);
                     
                     .project-title{
-                        @include heading;
+                        @include mixin.heading;
                         margin-top: 20px;
                         font-size: 30px;
                     }
     
                     .project-info{
-                        @include info;
+                        @include mixin.info;
                         font-size: 16px;
                         text-align: justify;
                     }
     
                     .cta-container{
-                        @include container(900px, 100px);
-                        @include flexbox(space-around, center);
+                        @include mixin.container(900px, 100px);
+                        @include mixin.flexbox(space-around, center);
                     
                         .cta{
-                            @include cta;
+                            @include mixin.cta;
                             width: 180px;
                             height: 45px;
                         }

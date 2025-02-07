@@ -1,33 +1,33 @@
-@use '../sass/font';
-@use '../sass/variable';
-@import '../sass/mixin';
+@use '../sass/font' as font;
+@use '../sass/variable' as variable;
+@use '../sass/mixin' as mixin;
 
 .footer-wrapper{
-    @include wrapper($min-height:auto);
+    @include mixin.wrapper($min-height:auto);
     background: linear-gradient(to left, white, rgb(33, 198, 200));
 
     .content-container{
-        @include container($min-height:230px);
-        @include flexbox(center, center, column);
+        @include mixin.container($min-height:230px);
+        @include mixin.flexbox(center, center, column);
         margin:auto;
         margin-top:30px;
 
         .text{
-            @include flexbox(center, center, column);
+            @include mixin.flexbox(center, center, column);
             img{
                 width: 300px;
             }
 
             .info{
-                @include info;
+                @include mixin.info;
             }
         }
 
         .icons-container{
-            @include container(200px, 50px);
+            @include mixin.container(200px, 50px);
 
             .hero-icons{
-                @include flexbox(space-around, center, row);
+                @include mixin.flexbox(space-around, center, row);
                 
                 .hero-icon{
                     color: variable.$color-primary;
@@ -47,30 +47,30 @@
     .footer-wrapper{
        
         .content-container{
-            @include container($min-height:230px);
-            @include flexbox(center, center, column);
+            @include mixin.container($min-height:230px);
+            @include mixin.flexbox(center, center, column);
             margin:auto;
             margin-top:30px;
             padding-left: 60px;
     
             .text{
-                @include flexbox(center, center, column);
+                @include mixin.flexbox(center, center, column);
                 img{
                     width: 200px;
                 }
     
                 .info{
-                    @include info;
+                    @include mixin.info;
                     width: 250px;
                     text-align: center;
                 }
             }
     
             .icons-container{
-                @include container(200px, 50px);
+                @include mixin.container(200px, 50px);
     
                 .hero-icons{
-                    @include flexbox(space-around, center, row);
+                    @include mixin.flexbox(space-around, center, row);
                     
                     .hero-icon{
                         color: variable.$color-primary;

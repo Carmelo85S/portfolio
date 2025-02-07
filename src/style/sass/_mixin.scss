@@ -1,5 +1,6 @@
-@use './font';
-@use './variable';
+@use './font' as font;
+@use './variable' as variable;
+
 
 @mixin flexbox($justify-content: center, $align-items: center, $flex-direction: row, $flex-wrap: wrap){
     display: flex;
