@@ -61,7 +61,6 @@
 @media screen and (min-width:320px) and (max-width:500px){
     .projects-wrapper{
         @include mixin.wrapper;
-        border: 1px solid red;
     
         .projects-heading-container{
             @include mixin.container($min-height:50px);
