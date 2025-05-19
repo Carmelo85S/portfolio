@@ -1,5 +1,5 @@
 import Architect from '../../assets/images/architect.webp';
-import Horizon from '../../assets/images/horizon.webp';
+import BurgerLab from '../../assets/images/burger-lab.webp';
 import RideReady from '../../assets/images/ride-ready.webp';
 import VirtualPet from '../../assets/images/virtual-pet.webp';
 import '../../style/project/project.css';
@@ -15,11 +15,11 @@ const Projects = () => {
             linkGitHub: 'https://github.com/Carmelo85S/architect_website'
         },
         {
-            img: Horizon,
-            title: 'Horizon',
-            info: 'A landing page built in React based on a Figma design. This project showcases my skills in front-end development, including translating a detailed design into a responsive and interactive web page using modern technologies like React and Sass.',
-            linkLive: 'https://carmelo85s.github.io/horizon/',
-            linkGitHub: 'https://github.com/Carmelo85S/horizon'
+            img: BurgerLab,
+            title: 'Burger Lab',
+            info: 'Welcome to BurgerLab, a modern, responsive restaurant website built with React and Tailwind CSS. It features dynamic menu tabs, animated sections, a contact form, and smooth scroll-based interactions. Perfect for burger joints or any restaurant wanting a clean digital presence.',
+            linkLive: 'https://carmelo85s.github.io/burger-lab/',
+            linkGitHub: 'https://github.com/Carmelo85S/burger-lab'
         },
         {
             img: RideReady,

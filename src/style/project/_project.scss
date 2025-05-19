@@ -46,7 +46,7 @@
                     @include mixin.container(450px, 100px);
                     @include mixin.flexbox(space-between, center);
                 
-                    .ctmixin.a{
+                    .cta{
                         @include mixin.cta;
                         width: 180px;
                         height: 45px;
